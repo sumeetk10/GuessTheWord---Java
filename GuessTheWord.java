@@ -19,7 +19,7 @@ public class GuessTheWord {
     }
 
     void showWord() {
-        System.out.println("You have"  +rounds+ "tries left");
+        System.out.println("You have "  +rounds+ " tries left");
         System.out.println(randomWords);
     }
 
@@ -35,17 +35,18 @@ public class GuessTheWord {
         boolean isGuessRight = randomWords.guess(lastRound);
         
         if(isGuessRight) {
-        if(randomWords.isGuessRight()) {
-            System.out.println("congratulation");
-            System.out.println("the word is:" +randomWords);
-            play = false;
-        }
+           if(randomWords.isGuessRight()) {
+              System.out.println("Congratulation You WON!!");
+              System.out.println("the word is:" +randomWords);
+              play = false;
+            }
         }
         else {
             rounds--;
 
             if(rounds == 0) {
                 System.out.println("game over !!!");
+                play = false;
             }
         }
     }
