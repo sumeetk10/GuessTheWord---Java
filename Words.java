@@ -3,7 +3,8 @@ import java.util.Random;
 public class Words {
     
     private String[] randomWords = {"animal","happiness","infinite","steady","birthday","extreme","rights","properties","ceremony",
-        "independent","information","teacher","student"};
+        "independent","information","teacher","student","school","dinner","teamwork","stubborn","fast","sad",
+"dangerous","century","distance","sunrise"};
 
     private String selectedWords;
     private Random random = new Random();
